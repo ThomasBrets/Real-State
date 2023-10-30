@@ -15,8 +15,8 @@ const Header = () => {
       </Link>
       {/* Buttons */}
       <div className="flex gap-6 items-center">
-        <Link to="" className='text-violet-900'>log in</Link>
-        <Link to="" className='text-violet-900'>Sign up</Link>
+        <Link to="" className='text-violet-700 hover:text-violet-900 transition'>log in</Link>
+        <Link to="" className='text-white bg-violet-700 hover:bg-violet-800  px-4 py-2 rounded transition'>Sign up</Link>
       </div>
     </div>
   </header>;

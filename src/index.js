@@ -5,12 +5,18 @@ import App from "./App";
 
 // Router
 import { BrowserRouter } from "react-router-dom";
+import  HouseContextProvider  from "./HouseContext/HouseContext";
+
+// Context
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <HouseContextProvider>
+    <BrowserRouter>
     <React.StrictMode>
       <App />
     </React.StrictMode>
   </BrowserRouter>
+  </HouseContextProvider>
 );
