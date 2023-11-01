@@ -11,7 +11,7 @@ import { Menu } from "@headlessui/react";
 
 const CountryDropdown = () => {
   const { country, setCountry, countries } = useContext(HouseContext);
-  console.log("COUNTRY", countries);
+  // console.log("COUNTRY", countries);
 
   const [isOpen, setIsOpen] = useState(false);
 
