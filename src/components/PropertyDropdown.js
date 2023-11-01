@@ -11,7 +11,7 @@ import { Menu } from "@headlessui/react";
 
 const PropertyDropdown = () => {
   const { property, setProperty, properties } = useContext(HouseContext);
-  console.log("PORPERTY", properties);
+  // console.log("PORPERTY", properties);
 
   const [isOpen, setIsOpen] = useState(false);
 

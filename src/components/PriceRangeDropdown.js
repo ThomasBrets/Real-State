@@ -11,7 +11,7 @@ import { Menu } from "@headlessui/react";
 
 const PriceRangeDropdown = () => {
   const { price, setPrice } = useContext(HouseContext);
-  console.log("PRICE", price);
+  // console.log("PRICE", price);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -37,9 +37,6 @@ const PriceRangeDropdown = () => {
     {
       value:"30000 - 40000",
     },
-    {
-      value:"Price range (any)",
-    }
 
   ]
 
