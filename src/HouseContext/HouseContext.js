@@ -41,7 +41,7 @@ const HouseContextProvider = ({ children }) => {
 
   // !Search HandleClick
 
-  const handleClick = (str) => {
+  const handleClick = () => {
     // Set Loading
     setLoading(true);
 
@@ -117,7 +117,7 @@ const HouseContextProvider = ({ children }) => {
     });
 
     setTimeout(() => {
-      return newHouses < 1 ? setHouses([]) : setHouses(newHouses),
+      return newHouses < 1 ? setHouses([]) : setHouses(newHouses), //newHouses => housesData filtrado 
       setLoading(false);
     }, 1000);
   };
