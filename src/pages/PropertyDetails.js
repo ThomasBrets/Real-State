@@ -100,7 +100,7 @@ const PropertyDetails = () => {
             </div>
 
             {/* form */}
-            <form className="flex flex-col gap-y-2">
+            <form className="flex flex-col gap-y-4">
               <input
                 className="border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-10 text-sm"
                 type="text"
@@ -116,10 +116,10 @@ const PropertyDetails = () => {
                 type="text"
                 placeholder="Phone*"
               />
-              <textarea className="border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 text-sm" placeholder="Message*"></textarea>
-              <div className="flex flex-col">
-                <button>Send message</button>
-                <button>Call</button>
+              <textarea className="border border-gray-300 focus:border-violet-700 outline-none resize-none h-36 rounded w-full p-4 text-sm text-gray-400" placeholder="Message*" defaultValue="Hello, I am interested in [Modern apartment]"></textarea>
+              <div className="flex gap-x-2">
+                <button className="bg-violet-700 hover:bg-violet-800 rounded text-white p-4 text-sm flex-1">Send message</button>
+                <button className="text-violet-700 hover:text-violet-500 border border-violet-700 hover:border-violet-500 rounded text-sm transition p-4 flex-1">Call</button>
               </div>
             </form>
           </div>
